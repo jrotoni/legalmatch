@@ -291,7 +291,7 @@ footer .container .text-md-right img:first-child {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 8vh;
   left: 0;
   top: 0;
   width: 100%;
@@ -306,6 +306,7 @@ footer .container .text-md-right img:first-child {
   padding: 50px;
   border: 1px solid #888;
   width: 60%;
+  max-height: 95%;
 }
 
 .modal .close {
@@ -349,6 +350,7 @@ footer .container .text-md-right img:first-child {
 
 #step3 .checklist {
   padding: 20px 0;
+  overflow-y: scroll;
 }
 
 #step3 .checklist .form-check {
@@ -581,5 +583,15 @@ footer .container .text-md-right img:first-child {
   opacity: 1;
   right: 0;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .modal-content {
+    width: 85% !important;
+    padding: 20px !important;
+  }
+  .modal-content.reviewModal {
+    width: 95% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

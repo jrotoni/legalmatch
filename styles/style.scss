@@ -271,7 +271,7 @@ footer {
   display: none; 
   position: fixed; 
   z-index: 1; 
-  padding-top: 100px; 
+  padding-top: 8vh; 
   left: 0;
   top: 0;
   width: 100%; 
@@ -286,6 +286,7 @@ footer {
     padding: 50px;
     border: 1px solid #888;
     width: 60%;
+    max-height: 95%;
   }
 
   .close {
@@ -328,6 +329,7 @@ footer {
 
   .checklist {
     padding: 20px 0;
+    overflow-y: scroll;
     .form-check {
       margin: 20px 0;
   
@@ -530,4 +532,14 @@ footer {
     }
   }
 
+}
+
+@media only screen and (max-width: 800px) {
+  .modal-content {
+    width: 85% !important;
+    padding: 20px !important;
+    &.reviewModal {
+      width: 95% !important;
+    }
+  }
 }
