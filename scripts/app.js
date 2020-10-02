@@ -73,7 +73,7 @@ function findClosestElement (el, selector) {
 let closeBtns = document.querySelectorAll(".close");
 closeBtns.forEach(function addCloseClickEvent (btn) {
   btn.onclick = function closeModal () {
-    document.body.style.overflow = 'scroll';
+    document.body.style.overflow = 'auto';
     let modal = findClosestElement(btn, ".modal");
     modal.style.display = "none";
   };
