@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'Gotham';
-  src: url('assets/fonts/Gotham-Bold.otf') format('opentype');
+  src: url('../assets/fonts/Gotham-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('assets/fonts/Gotham-Medium.otf') format('opentype');
+  src: url('../assets/fonts/Gotham-Medium.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Gotham';
-  src: url('assets/fonts/Gotham-Book.otf') format('opentype');
+  src: url('../assets/fonts/Gotham-Book.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
@@ -328,8 +328,9 @@ footer {
   }
 
   .checklist {
-    padding: 20px 0;
-    overflow-y: scroll;
+    padding: 20px 5px;
+    overflow: hidden;
+    overflow-y: auto;
     .form-check {
       margin: 20px 0;
   
